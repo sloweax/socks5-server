@@ -18,7 +18,7 @@ clean:
 
 install: all
 	mkdir -p $(BINDSTPATH)
-	cp ss5 $(BINDSTPATH)
+	install -m755 ss5 $(BINDSTPATH)
 
 uninstall:
 	rm -f $(BINDSTPATH)/ss5
